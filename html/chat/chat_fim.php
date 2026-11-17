@@ -49,190 +49,13 @@ $mensagens = listarMensagens($conexao, $id_conversa);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Chat - WorkMatch</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            background-color: #222;
-            color: white;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 12px;
-            border-radius: 5px;
-            font-size: 14px;
-            background-color: #444;
-        }
-
-        header a:hover {
-            background-color: #555;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-        /* JANELA DO CHAT */
-        .chat-container {
-            width: 100%;
-            max-width: 800px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        /* ÁREA DAS MENSAGENS (Onde rola a tela) */
-        .area-mensagens {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            background-color: #e9ecef;
-        }
-
-        /* BALÕES DE MENSAGEM */
-        .balao {
-            max-width: 70%;
-            padding: 10px 15px;
-            border-radius: 15px;
-            font-size: 15px;
-            line-height: 1.4;
-            position: relative;
-        }
-
-        .balao .hora {
-            display: block;
-            font-size: 10px;
-            color: rgba(0, 0, 0, 0.5);
-            margin-top: 5px;
-            text-align: right;
-        }
-
-        /* Mensagem enviada pelo usuário logado (Direita) */
-        .minha-mensagem {
-            align-self: flex-end;
-            background-color: #dcf8c6;
-            /* Cor verde estilo WhatsApp */
-            border-bottom-right-radius: 2px;
-        }
-
-        /* Mensagem recebida da outra pessoa (Esquerda) */
-        .outra-mensagem {
-            align-self: flex-start;
-            background-color: #ffffff;
-            border-bottom-left-radius: 2px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        /* FORMULÁRIO DE ENVIO */
-        .area-envio {
-            padding: 15px;
-            background-color: white;
-            border-top: 1px solid #ddd;
-            display: flex;
-            gap: 10px;
-        }
-
-        .area-envio input[type="text"] {
-            flex: 1;
-            padding: 12px 15px;
-            border: 1px solid #ccc;
-            border-radius: 25px;
-            font-size: 15px;
-            outline: none;
-        }
-
-        .area-envio input[type="text"]:focus {
-            border-color: #007bff;
-        }
-
-        .btn-enviar {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            padding: 0 20px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .btn-enviar:hover {
-            background-color: #0056b3;
-        }
-
-        .cabecalho-chat {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 15px 20px;
-            background-color: #222;
-            color: white;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .foto-chat {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            object-fit: cover;
-            background-color: #ddd;
-        }
-
-        .sem-foto {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 22px;
-        }
-
-        .info-chat h2 {
-            font-size: 17px;
-            margin: 0;
-        }
-
-        .info-chat span {
-            font-size: 12px;
-            color: #ccc;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/css.css">
 </head>
 
-<body>
+<body class="pagina-chat">
 
     <header>
         <div class="logo">WorkMatch - Chat</div>
@@ -273,7 +96,7 @@ $mensagens = listarMensagens($conexao, $id_conversa);
 
                     <?php endforeach; ?>
                 <?php else: ?>
-                    <p style="text-align: center; color: #888; margin-top: 20px;">Nenhuma mensagem ainda. Envie um "Olá" para começar!</p>
+                    <p class="mensagem-vazia">Nenhuma mensagem ainda. Envie um "Olá" para começar!</p>
                 <?php endif; ?>
 
             </div>

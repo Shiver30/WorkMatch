@@ -64,188 +64,31 @@ if ($id_usuario !== null) {
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>WorkMatch</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px 40px;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .btn-sair {
-            background-color: #dc3545;
-            color: white;
-
-            padding: 10px 18px;
-
-            border-radius: 5px;
-
-            text-decoration: none;
-
-            font-weight: bold;
-        }
-
-        .btn-sair:hover {
-            background-color: #c82333;
-        }
-
-        main {
-            max-width: 900px;
-
-            margin: 40px auto;
-
-            padding: 20px;
-        }
-
-        .usuario-area {
-            background-color: white;
-
-            padding: 30px;
-
-            border-radius: 10px;
-
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 25px;
-
-            margin-bottom: 30px;
-        }
-
-        .foto-usuario {
-            width: 100px;
-
-            height: 100px;
-
-            object-fit: cover;
-
-            border-radius: 50%;
-
-            border: 3px solid #007bff;
-        }
-
-        .usuario-info h1 {
-            margin-bottom: 10px;
-        }
-
-        .usuario-info p {
-            color: #666;
-        }
-
-        .menu {
-            background-color: white;
-
-            padding: 30px;
-
-            border-radius: 10px;
-
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-        }
-
-        .menu h2 {
-            margin-bottom: 20px;
-        }
-
-        .menu a {
-            display: block;
-
-            background-color: #007bff;
-
-            color: white;
-
-            padding: 14px;
-
-            margin-bottom: 10px;
-
-            border-radius: 5px;
-
-            text-decoration: none;
-
-            text-align: center;
-
-            font-weight: bold;
-        }
-
-        .menu a:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            text-align: center;
-
-            padding: 20px;
-
-            color: #777;
-        }
-
-        @media (max-width: 600px) {
-
-            header {
-                padding: 15px 20px;
-            }
-
-            .logo {
-                font-size: 20px;
-            }
-
-            main {
-                margin: 20px auto;
-            }
-
-            .usuario-area {
-                flex-direction: column;
-
-                text-align: center;
-            }
-
-        }
-    </style>
-
+    <link rel="stylesheet" href="../css/css.css">
 </head>
-<body>
 
-    <header>
+
+<body class="pagina-home">
+
+    <header class="home-header">
         <div class="logo">WorkMatch</div>
         <a href="../index.php?logout=1" class="btn-sair">Sair</a>
     </header>
 
+    <main class="home-main">
 
-    <main>
-
-
-        <!-- ===============================
-         USUÁRIO LOGADO
-    ================================ -->
+        <!-- USUÁRIO LOGADO -->
         <section class="usuario-area">
+
             <img src="<?= htmlspecialchars($caminho_foto) ?>" alt="Foto do usuário" class="foto-usuario">
+
             <div class="usuario-info">
                 <h1>Olá, <?= htmlspecialchars($nome_usuario) ?>!</h1>
                 <p>Você está logado no sistema.</p>
@@ -253,10 +96,7 @@ if ($id_usuario !== null) {
 
         </section>
 
-
-        <!-- ===============================
-         MENU
-    ================================ -->
+        <!-- MENU -->
         <section class="menu">
 
             <h2>Menu</h2>
@@ -267,14 +107,11 @@ if ($id_usuario !== null) {
 
         </section>
 
-
     </main>
 
-
-    <footer>
+    <footer class="home-footer">
         <?php require_once "../include/rodape.php"; ?>
     </footer>
-
 
 </body>
 
