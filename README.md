@@ -141,8 +141,9 @@ O WorkMatch foi desenvolvido colaborativamente por uma equipe de quatro integran
 A distribuição aproximada de participação no desenvolvimento foi:
 
 - **Fernando Ramos Silva Reis (@Shiver30):** 40%.
-- **Taynan (@Taynan19):** 40%.
-- **Demais colaboradores:** 20% divididos entre dois integrantes.
+- **Taynan Rodrigues Pereira(@Taynan19):** 40%.
+- **Arthur Correia Barros (@ArtCdev):** 10%.
+- **Jaqueline Pereira de Lima (@jac654):** 10%.
 
 O desenvolvimento envolveu colaboração na implementação das funcionalidades, organização do sistema e integração com o banco de dados.
 
@@ -156,12 +157,17 @@ O repositório representa o desenvolvimento realizado pela equipe e tem finalida
 
 ---
 
-## Autor
+## Autores e colaboradores
 
-**Fernando Ramos Silva Reis**
+Projeto desenvolvido em equipe como parte da formação técnica em Informática para Internet.
 
-- GitHub: [@Shiver30](https://github.com/Shiver30)
-- Repositório: [WorkMatch](https://github.com/Shiver30/WorkMatch)
+| Colaborador | GitHub |
+|---|---|
+| Fernando Ramos Silva Reis | [@Shiver30](https://github.com/Shiver30) |
+| Taynan Rodrigues Pereira | [@Taynan19](https://github.com/Taynan19) |
+| Arthur Correia Barros| [@ArtCdev].(https://github.com/ArtCdev). |
+| Jaqueline Pereira de Lima | [@jac654](https://github.com/jac654) |
+---
 
 ---
 
