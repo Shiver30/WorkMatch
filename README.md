@@ -165,7 +165,7 @@ Projeto desenvolvido em equipe como parte da formação técnica em Informática
 |---|---|
 | Fernando Ramos Silva Reis | [@Shiver30](https://github.com/Shiver30) |
 | Taynan Rodrigues Pereira | [@Taynan19](https://github.com/Taynan19) |
-| Arthur Correia Barros| [@ArtCdev].(https://github.com/ArtCdev). |
+| Arthur Correia Barros| [@ArtCdev](https://github.com/ArtCdev) |
 | Jaqueline Pereira de Lima | [@jac654](https://github.com/jac654) |
 ---
 
